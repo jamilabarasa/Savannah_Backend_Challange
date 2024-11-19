@@ -38,6 +38,7 @@ After successful authentication, update the user's phone number to enable SMS fu
 {
   "Phone": "0741988723"
 }
+```
 
 
 ### 3. Configure SMS Notifications
