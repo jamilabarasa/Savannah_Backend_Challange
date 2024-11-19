@@ -71,6 +71,7 @@ Place an order and trigger an SMS notification to the customer.
   "time": "2024-11-19T13:17:28.004831698+03:00",
   "customerid": 1
 }
+```
 
 
 ## Notes
