@@ -23,7 +23,7 @@ Visit the following endpoint to authenticate via Google:
 
 ---
 
-### 2. Update User Phone Number
+### 2. Update User Phone Number (ID to be gotten from the response from step 1)
 
 After successful authentication, update the user's phone number to enable SMS functionality.  
 
