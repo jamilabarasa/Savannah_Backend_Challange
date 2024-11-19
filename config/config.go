@@ -1,15 +1,18 @@
 package config
 
 import (
-	"log"
+	"fmt"
+	// "log"
 	"os"
+
 	"github.com/joho/godotenv"
 )
 
 // loads environment variables from the .env file
 func LoadConfig() {
 	if err := godotenv.Load(); err != nil {
-		log.Fatal("Error loading .env file")
+		// log.Fatal("Error loading .env file")
+		fmt.Print("Error loading .env file")
 	}
 }
 
