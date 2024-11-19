@@ -11,10 +11,9 @@ func UserRoutes(r *gin.Engine) {
 	// Group routes that require authentication
 	user := r.Group("/users")
 	{
-		// Protect these routes with AuthMiddleware
+			//TODO uncomment to Protect these routes with AuthMiddleware
 		user.Use(middleware.AuthMiddleware())
-
-		
+			
 		user.GET("/:id", handler.GetUserProfile)
 
 		

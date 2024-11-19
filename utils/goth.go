@@ -13,9 +13,11 @@ func SetupGoth() {
 		google.New(
 			os.Getenv("GOOGLE_CLIENT_ID"),
 			os.Getenv("GOOGLE_CLIENT_SECRET"),
-			"http://localhost:3000/auth/google/callback",
+			"https://savannahbackendchallange-68506efced3c.herokuapp.com/auth/google/callback",
 			"profile",
 			"email",
 		),
+
+		
 	)
 }
