@@ -34,10 +34,11 @@ After successful authentication, update the user's phone number to enable SMS fu
 [https://savannahbackendchallange-68506efced3c.herokuapp.com/users/1](https://savannahbackendchallange-68506efced3c.herokuapp.com/users/1)
 
 **Request Body**:  
-<!-- ```json
+```json
 {
   "Phone": "0741988723"
-} -->
+}
+```
 
 
 ### 3. Configure SMS Notifications
@@ -71,6 +72,7 @@ Place an order and trigger an SMS notification to the customer.
   "time": "2024-11-19T13:17:28.004831698+03:00",
   "customerid": 1
 }
+```
 
 
 ## Notes
@@ -117,10 +119,3 @@ PORT=3000
 4. **Start the Application**
    ```bash
    go run main.go
-   
-
-
-
-
-
-
