@@ -2,7 +2,6 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"customer-orders/config"
 	"customer-orders/routes"
 	"customer-orders/utils"
 	"customer-orders/database"	
@@ -10,7 +9,7 @@ import (
 
 func main() {
 	// Load environment variables
-	config.LoadConfig()
+	// config.LoadConfig()
 
 	// Initialize the database connection
 	database.ConnectDatabase()
