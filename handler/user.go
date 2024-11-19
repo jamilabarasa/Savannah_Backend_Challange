@@ -7,14 +7,19 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/google/uuid"
 )
 
 // CreateOrUpdateUser checks if the user exists, and creates or updates the user in the database
 func CreateOrUpdateUser(name string, email string, role string) (*models.User, error) {
 	var user models.User
+	
+	// Generate a new UUID
+	newUUID := uuid.New()
+	
 	if err := database.DB.Where("email = ?", email).First(&user).Error; err != nil {
 		// User not found, so create a new user
-		user = models.User{Name: name, Email: email,Phone: "N/A",Code: "N/A", Role: role}
+		user = models.User{Name: name, Email: email,Phone: "N/A",Code: newUUID.String(), Role: role}
 		if err := database.DB.Create(&user).Error; err != nil {
 			return nil, err
 		}
