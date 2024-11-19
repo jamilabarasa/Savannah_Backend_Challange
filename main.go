@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
+	"customer-orders/config"
+	"customer-orders/database"
 	"customer-orders/routes"
 	"customer-orders/utils"
-	"customer-orders/database"	
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
@@ -26,6 +27,14 @@ func main() {
 	routes.UserRoutes(r)
 
 	routes.OrderRoutes(r)
+
+	port := config.GetEnv("PORT")
+	if port == ""{
+		port = "3000"
+	}
 	
-	r.Run(":3000")
+	// r.Run(":3000")
+	r.Run(":"+port)
+
+	
 }
