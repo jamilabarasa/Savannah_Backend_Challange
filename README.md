@@ -34,10 +34,10 @@ After successful authentication, update the user's phone number to enable SMS fu
 [https://savannahbackendchallange-68506efced3c.herokuapp.com/users/1](https://savannahbackendchallange-68506efced3c.herokuapp.com/users/1)
 
 **Request Body**:  
-<!-- ```json
+```json
 {
   "Phone": "0741988723"
-} -->
+}
 
 
 ### 3. Configure SMS Notifications
