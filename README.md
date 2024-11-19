@@ -9,11 +9,6 @@
 
 ---
 
-### Base URL
-
-The application is hosted on:  
-[https://savannahbackendchallange-68506efced3c.herokuapp.com](https://savannahbackendchallange-68506efced3c.herokuapp.com)
-
 ### 1. Login/Register with Google
 
 Visit the following endpoint to authenticate via Google:  
