@@ -70,10 +70,9 @@ Place an order and trigger an SMS notification to the customer.
 ```
 
 
-## Notes
-- 
+## Notes                                      
 - All requests must include proper authentication via the Google OAuth endpoint described in Step 1.  
--Use Customer ID from auth/login callback response
+- Use Customer ID from auth/login callback response
 - The `customerid` in the request body must correspond to an existing user in the database.  
 - Use the Africa's Talking simulator to test SMS functionality before deploying the system live.  
 - Ensure all request bodies are correctly formatted as JSON to avoid errors.  
